@@ -1,0 +1,92 @@
+baseURL = "https://congzhangzh.github.io/"
+title = "Cong Zhang"
+theme = "PaperMod"
+
+# English is served at the site root, Chinese under /zh/.
+# Never create top-level sections named like a project site
+# (freerdp-web, rdp-release-kit, hello_ai): they would shadow it.
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+hasCJKLanguage = true
+enableRobotsTXT = true
+enableGitInfo = true
+
+[pagination]
+  pagerSize = 10
+
+[markup.highlight]
+  noClasses = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  author = "Cong Zhang"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowToc = true
+  TocOpen = false
+  ShowCodeCopyButtons = true
+  ShowPostNavLinks = true
+  ShowShareButtons = false
+  ShowBreadCrumbs = true
+  displayFullLangName = true
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/congzhangzh"
+  [[params.socialIcons]]
+    name = "rss"
+    url = "index.xml"
+
+[languages.en]
+  label = "English"
+  weight = 1
+  title = "Cong Zhang"
+  [languages.en.params]
+    description = "Open-source remote desktop: FreeRDP, xrdp and GNOME Remote Desktop, upstream-first."
+    [languages.en.params.homeInfoParams]
+      Title = "Hi, I'm Cong Zhang"
+      Content = "I work on open-source remote desktop: FreeRDP, xrdp and GNOME Remote Desktop. Everything goes upstream first. Notes from that work, in English and Chinese."
+  [[languages.en.menus.main]]
+    name = "Posts"
+    pageRef = "/posts"
+    weight = 10
+  [[languages.en.menus.main]]
+    name = "Archive"
+    pageRef = "/archives"
+    weight = 20
+  [[languages.en.menus.main]]
+    name = "Search"
+    pageRef = "/search"
+    weight = 30
+  [[languages.en.menus.main]]
+    name = "Tags"
+    pageRef = "/tags"
+    weight = 40
+
+[languages.zh]
+  label = "中文"
+  weight = 2
+  title = "Cong Zhang"
+  [languages.zh.params]
+    description = "开源远程桌面：FreeRDP、xrdp 与 GNOME Remote Desktop，上游优先。"
+    [languages.zh.params.homeInfoParams]
+      Title = "你好，我是 Cong Zhang"
+      Content = "我在做开源远程桌面：FreeRDP、xrdp 和 GNOME Remote Desktop，所有改动都先提交上游。这里记录这些工作，中英双语。"
+  [[languages.zh.menus.main]]
+    name = "文章"
+    pageRef = "/posts"
+    weight = 10
+  [[languages.zh.menus.main]]
+    name = "归档"
+    pageRef = "/archives"
+    weight = 20
+  [[languages.zh.menus.main]]
+    name = "搜索"
+    pageRef = "/search"
+    weight = 30
+  [[languages.zh.menus.main]]
+    name = "标签"
+    pageRef = "/tags"
+    weight = 40
