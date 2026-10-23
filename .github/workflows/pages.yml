@@ -2,8 +2,7 @@ name: Deploy redirect to Pages
 
 # The blog moved to congzhang.li (repo congzhangzh/blog). This user site only
 # redirects there; it has no custom domain, so the project sites stay at
-# congzhangzh.github.io/<project>. The Hugo sources left in this repo are no
-# longer built.
+# congzhangzh.github.io/<project>.
 
 on:
   push:
